@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="QQ网名繁体字大全，提供最新、最潮的QQ繁体网名推荐，包含个性、霸气、可爱、唯美等多种风格，支持在线预览和复制，满足用户个性化社交需求。">
+    <meta name="keywords" content="QQ网名繁体字,QQ网名,繁体字网名,QQ个性网名,繁体QQ昵称">
+    <title>QQ网名繁体字-个性潮流繁体昵称精选与在线生成</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #6c5ce7;
+            --secondary-color: #a29bfe;
+            --accent-color: #fd79a8;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-main: #2d3436;
+            --text-light: #636e72;
+            --border-radius: 12px;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--text-light);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 3rem 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+        }
+
+        .search-box {
+            max-width: 500px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 15px 20px;
+            border-radius: 50px;
+            border: none;
+            font-size: 1rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            outline: none;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        /* Filter Tags */
+        .filter-section {
+            margin-bottom: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .filter-btn {
+            padding: 8px 20px;
+            background: var(--card-bg);
+            border: 1px solid #eee;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: var(--transition);
+            color: var(--text-light);
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        /* Grid Layout */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        /* Card Style */
+        .name-card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            border: 1px solid transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .name-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--secondary-color);
+        }
+
+        .name-content {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            word-break: break-all;
+            line-height: 1.4;
+        }
+
+        .name-content .sub-text {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: 0.5rem;
+            font-weight: 400;
+        }
+
+        .copy-btn {
+            margin-top: auto;
+            background: #f1f2f6;
+            color: var(--text-main);
+            border: none;
+            padding: 8px 24px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .copy-btn:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .copy-btn.copied {
+            background: #00b894;
+            color: white;
+        }
+
+        /* Category Section */
+        .category-section {
+            margin-top: 4rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding-left: 15px;
+            border-left: 5px solid var(--accent-color);
+            color: var(--text-main);
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .cat-item {
+            background: white;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .cat-item:hover {
+            transform: scale(1.02);
+        }
+
+        .cat-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .cat-name {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        /* Tips Section */
+        .tips-section {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin-top: 3rem;
+            box-shadow: var(--shadow);
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .tip-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .tip-item p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        /* Footer */
+        footer {
+            background: #2d3436;
+            color: #dfe6e9;
+            padding: 3rem 20px;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: #b2bec3;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+            color: #636e72;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .nav-links {
+                display: none; /* Simplified for mobile */
+            }
+
+            .header-container {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <span>繁体网名库</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#" class="active">首页</a>
+                <a href="#">最新网名</a>
+                <a href="#">男生网名</a>
+                <a href="#">女生网名</a>
+                <a href="#">情侣网名</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>QQ网名繁体字精选</h1>
+        <p>拒绝千篇一律，发现属于你的独特个性。提供最新、最全的繁体字QQ昵称，一键复制，轻松设置。</p>
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="输入关键词搜索繁体网名..." id="searchInput">
+        </div>
+    </section>
+
+    <main>
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <button class="filter-btn active" onclick="filterNames('all')">全部</button>
+            <button class="filter-btn" onclick="filterNames('cool')">高冷霸气</button>
+            <button class="filter-btn" onclick="filterNames('love')">可爱甜美</button>
+            <button class="filter-btn" onclick="filterNames('emo')">伤感唯美</button>
+            <button class="filter-btn" onclick="filterNames('art')">文艺清新</button>
+        </section>
+
+        <!-- Main Grid -->
+        <div class="grid-container" id="nameGrid">
+            <!-- Cards will be generated by JS or hardcoded for structure -->
+            <article class="name-card" data-category="cool">
+                <div class="name-content">孤城落日 <span class="sub-text">孤独的王者</span></div>
+                <button class="copy-btn" onclick="copyText(this)">复制</button>
+            </article>
+
+            <article class="name-card" data-category="love">
+                <div class="name-content">小熊饼干 <span class="sub-text">甜度满分</span></div>
+                <button class="copy-btn" onclick="copyText(this)">复制</button>
+            </article>
+
+            <article class="name-card" data-category="emo">
+                <div class="name-content">半夏微凉 <span class="sub-text">回忆往事</span></div>
+                <button class="copy-btn" onclick="copyText(this)">复制</button>
+            </article>
+
+            <article class="name-card" data-category="art">
+                <div class="name-content">墨染流年 <span class="sub-text">岁月静好</span></div>
+                <button class="copy-btn" onclick="copyText(this)">复制</button>
+            </article>
+
+            <article class="name-card" data-category="cool">
+                <div class="name-content">彼岸花开 <span class="sub-text">生人勿近</span></div>
+                <button class="copy-btn" onclick="copyText(this)">复制</button>
+            </article>
+
+            <article class="name-card" data-category="love">
+                <div class="name-content">草莓啵啵 <span class="sub-text">元气少女</span></div>
+                <button class="copy-btn" onclick="copyText(this)">复制</button>
+            </article>
+
+            <article class="name-card" data-category="emo">
+                <div class="name-content">浅唱离歌 <span class="sub-text">曲终人散</span></div>
+                <button class="copy-btn" onclick="copyText(this)">复制</button>
+            </article>
+
+            <article class="name-card" data-category="art">
+                <div class="name-content">清风徐来 <span class="sub-text">心如止水</span></div>
+                <button class="copy-btn" onclick="copyText(this)">复制</button>
+            </article>
+        </div>
+
+        <!-- Categories -->
+        <section class="category-section">
+            <h2 class="section-title">热门分类</h2>
+            <div class="category-grid">
+                <div class="cat-item">
+                    <span class="cat-icon">⚔️</span>
+                    <div class="cat-name">霸气侧漏</div>
+                </div>
+                <div class="cat-item">
+                    <span class="cat-icon">🌙</span>
+                    <div class="cat-name">深夜emo</div>
+                </div>
+                <div class="cat-item">
+                    <span class="cat-icon">🌸</span>
+                    <div class="cat-name">森系文艺</div>
+                </div>
+                <div class="cat-item">
+                    <span class="cat-icon">🎮</span>
+                    <div class="cat-name">游戏ID</div>
+                </div>
+                <div class="cat-item">
+                    <span class="cat-icon">💑</span>
+                    <div class="cat-name">情侣专属</div>
+                </div>
+                <div class="cat-item">
+                    <span class="cat-icon">🚫</span>
+                    <div class="cat-name">个性符号</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips Section -->
+        <section class="tips-section">
+            <h2 class="section-title">使用指南</h2>
+            <div class="tips-grid">
+                <div class="tip-item">
+                    <h3>关于繁简转换</h3>
+                    <p>QQ昵称支持繁体字输入。在设置时，直接复制本站提供的繁体字网名即可。如果您的系统输入法无法直接输入，建议使用在线转换工具或本站提供的预览结果。</p>
+                </div>
+                <div class="tip-item">
+                    <h3>个性化建议</h3>
+                    <p>一个好的网名能提升个人形象。建议网名长度控制在6-8个字之间，既方便记忆又显得精致。避免使用过于生僻或含有不良谐音的字眼。</p>
+                </div>
+                <div class="tip-item">
+                    <h3>版权与规范</h3>
+                    <p>请勿使用侵犯他人版权、含有违法违规或侮辱性含义的网名。QQ平台会对违规昵称进行处罚，建议选择积极向上的风格。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">关于我们</a>
+                <a href="#">提交网名</a>
+                <a href="#">联系客服</a>
+                <a href="#">隐私政策</a>
+            </div>
+            <p class="copyright">Copyright © 2023 繁体网名库. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple logic for filtering and copying
+        function filterNames(category) {
+            const cards = document.querySelectorAll('.name-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            // Update active button state
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Filter logic
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        function copyText(btn) {
+            const text = btn.previousElementSibling.innerText.split('\n')[0]; // Get main text part
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = btn.innerText;
+                btn.innerText = '已复制';
+                btn.classList.add('copied');
+                
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.classList.remove('copied');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                alert('复制失败，请手动复制');
+            });
+        }
+
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('keyup', function(e) {
+            const val = e.target.value.toLowerCase();
+            const cards = document.querySelectorAll('.name-card');
+            
+            cards.forEach(card => {
+                const name = card.innerText.toLowerCase();
+                if(name.includes(val)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
