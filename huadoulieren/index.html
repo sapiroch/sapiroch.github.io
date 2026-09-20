@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="花都猎人全集下载 - 提供花都猎人高清全集漫画在线阅读、章节目录、人物介绍及正版授权渠道查询。">
+    <meta name="keywords" content="花都猎人全集下载,花都猎人漫画,花都猎人在线阅读,花都猎人高清,花都猎人漫画下载">
+    <title>花都猎人全集下载 - 经典都市异能漫画全集在线阅读</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #3b82f6;
+            --primary-dark: #2563eb;
+            --secondary-color: #10b981;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-sub: #64748b;
+            --border-color: #e2e8f0;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 24px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-sub);
+            transition: color 0.2s;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        .header-actions .btn {
+            padding: 8px 16px;
+            font-size: 0.9rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            padding: 60px 0;
+            margin-bottom: 40px;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: var(--text-main);
+        }
+
+        .hero-text .tag {
+            display: inline-block;
+            background-color: #dbeafe;
+            color: var(--primary-dark);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            color: var(--text-sub);
+            margin-bottom: 24px;
+            font-size: 1.1rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            transition: all 0.2s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+            box-shadow: 0 4px 6px rgba(59, 130, 246, 0.3);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+
+        .btn-outline {
+            background-color: white;
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            aspect-ratio: 3/4;
+            object-fit: cover;
+        }
+
+        /* Info Cards */
+        .info-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .info-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .info-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .info-card p {
+            color: var(--text-sub);
+            font-size: 0.9rem;
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: 60px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 24px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            position: relative;
+            padding-left: 16px;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 24px;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        .more-link {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .more-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Manga Grid */
+        .manga-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 24px;
+        }
+
+        .manga-card {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid var(--border-color);
+            cursor: pointer;
+        }
+
+        .manga-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .card-cover {
+            position: relative;
+            aspect-ratio: 2/3;
+            background-color: #e2e8f0;
+        }
+
+        .card-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-badge {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background-color: rgba(0,0,0,0.7);
+            color: white;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        .card-info {
+            padding: 12px;
+        }
+
+        .card-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: var(--text-sub);
+        }
+
+        /* Chapter List */
+        .chapter-list {
+            background: var(--card-bg);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+
+        .chapter-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+            border-bottom: 1px solid var(--border-color);
+            transition: background 0.1s;
+        }
+
+        .chapter-item:last-child {
+            border-bottom: none;
+        }
+
+        .chapter-item:hover {
+            background-color: #f8fafc;
+        }
+
+        .chapter-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .chapter-num {
+            color: var(--text-sub);
+            font-size: 0.9rem;
+            min-width: 60px;
+        }
+
+        .chapter-name {
+            font-weight: 500;
+        }
+
+        .chapter-date {
+            color: var(--text-sub);
+            font-size: 0.85rem;
+        }
+
+        /* Download Section */
+        .download-section {
+            background-color: #1e293b;
+            color: white;
+            padding: 60px 0;
+            border-radius: var(--radius-lg);
+            margin-bottom: 60px;
+        }
+
+        .download-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .download-text h2 {
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+
+        .download-text p {
+            color: #94a3b8;
+            margin-bottom: 24px;
+        }
+
+        .download-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            color: #cbd5e1;
+        }
+
+        .check-icon {
+            color: var(--secondary-color);
+        }
+
+        .download-btn-large {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 16px 32px;
+            border-radius: var(--radius-md);
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-top: 20px;
+            transition: background 0.2s;
+        }
+
+        .download-btn-large:hover {
+            background-color: var(--primary-dark);
+        }
+
+        /* FAQ */
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 24px;
+        }
+
+        .faq-item {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+        }
+
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .faq-answer {
+            color: var(--text-sub);
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--card-bg);
+            border-top: 1px solid var(--border-color);
+            padding: 40px 0;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand p {
+            color: var(--text-sub);
+            margin-top: 12px;
+            font-size: 0.9rem;
+        }
+
+        .footer-links h4 {
+            font-size: 1rem;
+            margin-bottom: 16px;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links a {
+            color: var(--text-sub);
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-sub);
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 12px 0;
+            }
+
+            nav ul {
+                margin-top: 12px;
+                gap: 16px;
+                font-size: 0.9rem;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .info-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .download-content {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .download-list li {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-inner">
+        <a href="#" class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+            <span>花都猎人全集下载</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">首页</a></li>
+                <li><a href="#chapters">章节目录</a></li>
+                <li><a href="#download">下载专区</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="#download" class="btn btn-primary">立即阅读</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="tag">热门推荐</span>
+                <h1>花都猎人全集下载</h1>
+                <p>经典都市异能漫画《花都猎人》高清全集在线阅读。跟随主角的步伐，体验都市中的隐秘世界，感受热血与成长的交织。</p>
+                <div class="hero-buttons">
+                    <a href="#chapters" class="btn btn-primary">开始阅读</a>
+                    <a href="#download" class="btn btn-outline">查看下载</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- 使用 picsum 作为封面占位符，实际使用时应替换为漫画封面 -->
+                <img src="https://picsum.photos/seed/flowerhunter/400/533" alt="花都猎人漫画封面">
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info -->
+    <div class="container">
+        <div class="info-cards">
+            <div class="info-card">
+                <h3>高清画质</h3>
+                <p>支持手机、平板、电脑多端同步</p>
+            </div>
+            <div class="info-card">
+                <h3>全本收录</h3>
+                <p>涵盖所有章节，无删减阅读</p>
+            </div>
+            <div class="info-card">
+                <h3>极速加载</h3>
+                <p>智能压缩技术，流畅阅读体验</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Section -->
+    <section class="container">
+        <div class="section-header">
+            <h2 class="section-title">作品介绍</h2>
+            <a href="#" class="more-link">查看详情 &rarr;</a>
+        </div>
+        <article class="manga-grid">
+            <div class="manga-card">
+                <div class="card-cover">
+                    <img src="https://picsum.photos/seed/cover1/200/300" alt="花都猎人封面">
+                    <span class="card-badge">连载中</span>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">花都猎人</h3>
+                    <div class="card-meta">
+                        <span>都市 / 异能</span>
+                        <span>1.2M</span>
+                    </div>
+                </div>
+            </div>
+            <div class="manga-card">
+                <div class="card-cover">
+                    <img src="https://picsum.photos/seed/cover2/200/300" alt="相关推荐封面">
+                    <span class="card-badge">完结</span>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">都市神医</h3>
+                    <div class="card-meta">
+                        <span>都市 / 医术</span>
+                        <span>800K</span>
+                    </div>
+                </div>
+            </div>
+            <div class="manga-card">
+                <div class="card-cover">
+                    <img src="https://picsum.photos/seed/cover3/200/300" alt="相关推荐封面">
+                    <span class="card-badge">完结</span>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">极品战神</h3>
+                    <div class="card-meta">
+                        <span>都市 / 战神</span>
+                        <span>1.5M</span>
+                    </div>
+                </div>
+            </div>
+            <div class="manga-card">
+                <div class="card-cover">
+                    <img src="https://picsum.photos/seed/cover4/200/300" alt="相关推荐封面">
+                    <span class="card-badge">连载中</span>
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">龙王归来</h3>
+                    <div class="card-meta">
+                        <span>都市 / 重生</span>
+                        <span>2.1M</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chapter List -->
+    <section class="container" id="chapters">
+        <div class="section-header">
+            <h2 class="section-title">最新章节</h2>
+            <a href="#" class="more-link">查看全部 &rarr;</a>
+        </div>
+        <div class="chapter-list">
+            <a href="#" class="chapter-item">
+                <div class="chapter-title">
+                    <span class="chapter-num">第 456 章</span>
+                    <span class="chapter-name">最后的博弈</span>
+                </div>
+                <span class="chapter-date">2小时前</span>
+            </a>
+            <a href="#" class="chapter-item">
+                <div class="chapter-title">
+                    <span class="chapter-num">第 455 章</span>
+                    <span class="chapter-name">暗流涌动</span>
+                </div>
+                <span class="chapter-date">昨天</span>
+            </a>
+            <a href="#" class="chapter-item">
+                <div class="chapter-title">
+                    <span class="chapter-num">第 454 章</span>
+                    <span class="chapter-name">故人归来</span>
+                </div>
+                <span class="chapter-date">3天前</span>
+            </a>
+            <a href="#" class="chapter-item">
+                <div class="chapter-title">
+                    <span class="chapter-num">第 453 章</span>
+                    <span class="chapter-name">神秘组织</span>
+                </div>
+                <span class="chapter-date">5天前</span>
+            </a>
+            <a href="#" class="chapter-item">
+                <div class="chapter-title">
+                    <span class="chapter-num">第 452 章</span>
+                    <span class="chapter-name">家族大会</span>
+                </div>
+                <span class="chapter-date">1周前</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="container" id="download">
+        <div class="download-section">
+            <div class="download-content">
+                <div class="download-text">
+                    <h2>高清全集下载</h2>
+                    <p>为了给您提供最佳的离线阅读体验，我们提供多版本资源下载。请根据您的设备选择对应的版本。</p>
+                    <ul class="download-list">
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>支持 Android / iOS / Windows / Mac</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>已去除广告，纯净阅读</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>自动更新最新章节</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>支持断点续传与缓存</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="download-btn-large">点击下载资源包</a>
+                </div>
+                <div class="download-image">
+                    <!-- 下载图标占位 -->
+                    <img src="https://picsum.photos/seed/downloadicon/400/400" alt="下载示意图" style="width:100%; border-radius:8px; opacity:0.8;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="container" id="faq">
+        <div class="section-header">
+            <h2 class="section-title">常见问题 (FAQ)</h2>
+        </div>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    如何下载花都猎人全集？
+                </div>
+                <p class="faq-answer">请访问本站的“下载专区”页面，根据您的设备系统选择对应的下载链接，点击即可开始下载资源包。</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    下载后的文件是什么格式？
+                </div>
+                <p class="faq-answer">我们提供的是标准的 PDF 或 CBZ 格式，您可以使用 Adobe Acrobat Reader、ComicReader 等专业阅读器打开。</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    网站资源安全吗？
+                </div>
+                <p class="faq-answer">是的，我们承诺所有下载链接均为官方授权或经过安全扫描，无病毒、无木马，您可以放心下载。</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    如果遇到无法播放的章节怎么办？
+                </div>
+                <p class="faq-answer">您可以尝试刷新页面，或者切换到“下载专区”离线阅读。如果是最新章节，可能需要稍等几分钟更新。</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo" style="font-size: 1.2rem;">
+                    <span>花都猎人全集下载</span>
+                </a>
+                <p>专注提供高清漫画资源与在线阅读服务，致力于为漫画爱好者打造最优质的阅读体验。</p>
+            </div>
+            <div class="footer-links">
+                <h4>快速导航</h4>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">排行榜</a></li>
+                    <li><a href="#">分类浏览</a></li>
+                    <li><a href="#">漫画推荐</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>帮助中心</h4>
+                <ul>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">版权声明</a></li>
+                    <li><a href="#">联系客服</a></li>
+                    <li><a href="#">意见反馈</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 花都猎人全集下载网. All Rights Reserved. 本站资源仅供学习交流，请勿用于商业用途。</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+              </html>
