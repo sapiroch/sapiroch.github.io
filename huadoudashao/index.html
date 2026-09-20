@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="花都大少txt下载 - 提供正版小说《花都大少》全集在线阅读，包含章节目录、精彩试读及作者介绍，支持手机端与PC端流畅阅读。">
+    <meta name="keywords" content="花都大少txt下载,花都大少,小说在线阅读,都市小说,热门小说推荐">
+    <title>花都大少txt下载 - 全集在线阅读与资源分享</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #d32f2f;
+            --secondary-color: #f44336;
+            --accent-color: #ffeb3b;
+            --text-dark: #333333;
+            --text-gray: #666666;
+            --bg-light: #f9f9f9;
+            --white: #ffffff;
+            --spacing-unit: 16px;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Layout */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            color: var(--text-dark);
+            margin-left: 5px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .header-actions .btn-read {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 8px 24px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .header-actions .btn-read:hover {
+            background-color: var(--secondary-color);
+            color: var(--white);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #ffebee 0%, #ffffff 100%);
+            padding: 60px 0;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 36px;
+            margin-bottom: 16px;
+            color: var(--text-dark);
+        }
+
+        .hero-content .meta {
+            display: inline-flex;
+            gap: 15px;
+            font-size: 14px;
+            color: var(--text-gray);
+            background: rgba(255,255,255,0.8);
+            padding: 6px 16px;
+            border-radius: 20px;
+            margin-bottom: 24px;
+        }
+
+        .hero-tags span {
+            display: inline-block;
+            background: #ffebee;
+            color: var(--primary-color);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin: 4px;
+        }
+
+        .hero-buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+
+        .btn-outline {
+            background-color: var(--white);
+            color: var(--text-dark);
+            border: 2px solid #ddd;
+        }
+
+        .btn-outline:hover {
+            border-color: var(--text-dark);
+        }
+
+        /* Info Grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 24px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+            margin-bottom: 24px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .section-title a {
+            font-size: 14px;
+            color: var(--text-gray);
+            font-weight: normal;
+        }
+
+        .book-intro p {
+            margin-bottom: 15px;
+            text-align: justify;
+            text-indent: 2em;
+        }
+
+        .book-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 10px;
+            background: #f5f5f5;
+            border-radius: 6px;
+        }
+
+        .stat-num {
+            display: block;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: var(--text-gray);
+        }
+
+        /* Chapter List */
+        .chapter-list {
+            list-style: none;
+        }
+
+        .chapter-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .chapter-item:last-child {
+            border-bottom: none;
+        }
+
+        .chapter-name {
+            flex: 1;
+        }
+
+        .chapter-date {
+            color: var(--text-gray);
+            font-size: 14px;
+            margin-right: 15px;
+        }
+
+        .chapter-link {
+            color: var(--primary-color);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* Download Section */
+        .download-section {
+            background: linear-gradient(to right, #d32f2f, #b71c1c);
+            color: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .download-section h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .download-section p {
+            margin-bottom: 25px;
+            opacity: 0.9;
+        }
+
+        .download-options {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .download-btn {
+            background: var(--white);
+            color: var(--primary-color);
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .download-btn:hover {
+            background: #fff8f8;
+            transform: translateY(-2px);
+        }
+
+        /* Sidebar */
+        .sidebar-widget {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+        }
+
+        .widget-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background: #f0f0f0;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: var(--text-gray);
+        }
+
+        .tag:hover {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: #bdc3c7;
+            padding: 50px 0 20px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a:hover {
+            color: var(--white);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #34495e;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+            
+            nav ul {
+                margin: 15px 0;
+                gap: 15px;
+                font-size: 14px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-content h1 {
+                font-size: 28px;
+            }
+
+            .download-options {
+                flex-direction: column;
+            }
+
+            .download-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">小说<span>速读</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">分类</a></li>
+                    <li><a href="#">排行榜</a></li>
+                    <li><a href="#">书架</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="#read-now" class="btn-read">立即阅读</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>花都大少</h1>
+                <div class="meta">
+                    <span>作者：佚名</span>
+                    <span>类型：都市异能</span>
+                    <span>状态：连载中</span>
+                </div>
+                <div class="hero-tags">
+                    <span>豪门恩怨</span>
+                    <span>商战风云</span>
+                    <span>美女如云</span>
+                    <span>都市修真</span>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#read-now" class="btn btn-primary">开始阅读</a>
+                    <a href="#download" class="btn btn-outline">TXT下载</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="info-grid">
+                <!-- Main Content -->
+                <div class="main-content">
+                    <!-- Intro Card -->
+                    <article class="card book-intro">
+                        <div class="section-title">
+                            <span>作品简介</span>
+                            <a href="#">查看详情</a>
+                        </div>
+                        <p>《花都大少》是一部典型的都市异能小说。故事讲述了主角林风（化名）从一个默默无闻的普通青年，凭借惊人的天赋和坚韧不拔的意志，一步步崛起于都市商界与江湖之间的传奇经历。</p>
+                        <p>小说以“花都”为背景，描绘了光怪陆离的都市生活。主角林风不仅拥有过人的商业头脑，更身怀绝技，在应对各方势力的挑战中，逐渐揭开身世之谜，并收获了真挚的爱情。全书情节紧凑，高潮迭起，展现了主角在金钱、权力、情感与正义之间的抉择与成长。</p>
+                        <p>本书深受广大都市小说爱好者的喜爱，尤其是对于喜欢看主角扮猪吃虎、打脸逆袭的读者来说，是一部不可错过的佳作。故事中穿插着复杂的商战博弈和惊心动魄的江湖恩怨，读来令人大呼过瘾。</p>
+                        
+                        <div class="book-stats">
+                            <div class="stat-item">
+                                <span class="stat-num">500+</span>
+                                <span class="stat-label">章节总数</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">120W+</span>
+                                <span class="stat-label">总字数</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-num">98%</span>
+                                <span class="stat-label">好评率</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Chapter List -->
+                    <article class="card">
+                        <div class="section-title">
+                            <span>最新章节</span>
+                            <a href="#">查看目录</a>
+                        </div>
+                        <ul class="chapter-list">
+                            <li class="chapter-item">
+                                <span class="chapter-name">第450章：惊天反转</span>
+                                <span class="chapter-date">2023-10-24</span>
+                                <a href="#" class="chapter-link">阅读 &rarr;</a>
+                            </li>
+                            <li class="chapter-item">
+                                <span class="chapter-name">第449章：最后的赌局</span>
+                                <span class="chapter-date">2023-10-23</span>
+                                <a href="#" class="chapter-link">阅读 &rarr;</a>
+                            </li>
+                            <li class="chapter-item">
+                                <span class="chapter-name">第448章：绝境逢生</span>
+                                <span class="chapter-date">2023-10-22</span>
+                                <a href="#" class="chapter-link">阅读 &rarr;</a>
+                            </li>
+                            <li class="chapter-item">
+                                <span class="chapter-name">第447章：暗流涌动</span>
+                                <span class="chapter-date">2023-10-21</span>
+                                <a href="#" class="chapter-link">阅读 &rarr;</a>
+                            </li>
+                            <li class="chapter-item">
+                                <span class="chapter-name">第446章：林氏危机</span>
+                                <span class="chapter-date">2023-10-20</span>
+                                <a href="#" class="chapter-link">阅读 &rarr;</a>
+                            </li>
+                        </ul>
+                    </article>
+
+                    <!-- Download Section -->
+                    <section id="download" class="download-section">
+                        <h2>花都大少TXT下载</h2>
+                        <p>支持多种格式，离线阅读更方便。无广告，纯净版。</p>
+                        <div class="download-options">
+                            <a href="#" class="download-btn">📥 下载全集TXT</a>
+                            <a href="#" class="download-btn">📱 手机APP阅读</a>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <!-- Author Info -->
+                    <div class="sidebar-widget">
+                        <div class="widget-title">作者专栏</div>
+                        <div style="text-align: center; margin-bottom: 15px;">
+                            <img src="https://picsum.photos/seed/author/80/80" alt="作者头像" style="border-radius: 50%; width: 80px; height: 80px;">
+                            <h4 style="margin-top: 10px;">佚名</h4>
+                            <p style="font-size: 12px; color: #666;">人气作者</p>
+                        </div>
+                        <p style="font-size: 13px; color: #666; line-height: 1.5;">擅长都市题材，文笔细腻，剧情跌宕起伏，致力于为读者带来最极致的阅读体验。</p>
+                    </div>
+
+                    <!-- Hot Tags -->
+                    <div class="sidebar-widget">
+                        <div class="widget-title">热门标签</div>
+                        <div class="tag-cloud">
+                            <a href="#" class="tag">都市</a>
+                            <a href="#" class="tag">言情</a>
+                            <a href="#" class="tag">玄幻</a>
+                            <a href="#" class="tag">爽文</a>
+                            <a href="#" class="tag">修真</a>
+                            <a href="#" class="tag">逆袭</a>
+                            <a href="#" class="tag">豪门</a>
+                            <a href="#" class="tag">系统</a>
+                        </div>
+                    </div>
+
+                    <!-- Recommended -->
+                    <div class="sidebar-widget">
+                        <div class="widget-title">同类推荐</div>
+                        <ul style="list-style: none; font-size: 14px;">
+                            <li style="margin-bottom: 12px; border-bottom: 1px dashed #eee; padding-bottom: 8px;">
+                                <a href="#" style="font-weight: 500;">霸道总裁的替身前妻</a>
+                            </li>
+                            <li style="margin-bottom: 12px; border-bottom: 1px dashed #eee; padding-bottom: 8px;">
+                                <a href="#" style="font-weight: 500;">极品透视兵王</a>
+                            </li>
+                            <li style="margin-bottom: 12px; border-bottom: 1px dashed #eee; padding-bottom: 8px;">
+                                <a href="#" style="font-weight: 500;">绝世神医：腹黑大小姐</a>
+                            </li>
+                            <li>
+                                <a href="#" style="font-weight: 500;">神级龙卫</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>关于我们</h3>
+                    <p style="font-size: 14px; line-height: 1.8;">本站致力于提供最优质的小说阅读体验，收录各类热门小说资源，包括TXT下载、在线阅读及最新章节更新。尊重版权，请支持正版。</p>
+                </div>
+                <div class="footer-col">
+                    <h3>快速导航</h3>
+                    <ul>
+                        <li><a href="#">首页推荐</a></li>
+                        <li><a href="#">分类大全</a></li>
+                        <li><a href="#">排行榜单</a></li>
+                        <li><a href="#">投稿专区</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>帮助中心</h3>
+                    <ul>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">版权声明</a></li>
+                        <li><a href="#">联系站长</a></li>
+                        <li><a href="#">免责声明</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>关注我们</h3>
+                    <p style="font-size: 14px;">扫描二维码关注微信公众号，第一时间获取最新小说资讯。</p>
+                    <div style="margin-top: 10px; width: 120px; height: 120px; background: #fff; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
+                        <span style="color: #ccc;">QR Code</span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 小说速读. All Rights Reserved. 本站内容仅供学习交流使用，请于下载后24小时内删除。</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
