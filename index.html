@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="套路璐 - 深度解析职场、社交与情感中的心理博弈与策略智慧。提供实用的思维模型、沟通技巧与避坑指南，助你识破套路，掌握主动权。">
+    <meta name="keywords" content="套路璐,思维模型,沟通技巧,社交策略,避坑指南,心理学">
+    <title>套路璐 - 深度思维模型与社交策略指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #f59e0b;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-sub: #64748b;
+            --border-color: #e2e8f0;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        .section-header p {
+            color: var(--text-sub);
+            font-size: 1.1rem;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .btn-subscribe {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1.25rem;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        .btn-subscribe:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%);
+            padding: 5rem 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .hero h1 .highlight {
+            color: var(--primary-color);
+            position: relative;
+            display: inline-block;
+        }
+
+        .hero h1 .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            width: 100%;
+            height: 12px;
+            background-color: rgba(245, 158, 11, 0.3);
+            z-index: -1;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-sub);
+            max-width: 700px;
+            margin: 0 auto 2.5rem auto;
+        }
+
+        .hero-tags {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+        }
+
+        .tag {
+            background-color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--text-sub);
+            border: 1px solid var(--border-color);
+        }
+
+        /* Grid Layouts */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Cards */
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-image {
+            height: 180px;
+            background-color: #cbd5e1;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .card:hover .card-image img {
+            transform: scale(1.05);
+        }
+
+        .card-category {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-transform: uppercase;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text-main);
+        }
+
+        .card-excerpt {
+            color: var(--text-sub);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1rem;
+            font-size: 0.875rem;
+            color: var(--text-sub);
+        }
+
+        /* Strategy List */
+        .strategy-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .strategy-item {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .strategy-icon {
+            background-color: #eff6ff;
+            color: var(--primary-color);
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 1.5rem;
+        }
+
+        .strategy-content h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .strategy-content p {
+            color: var(--text-sub);
+            font-size: 0.95rem;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: white;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.5rem 0;
+        }
+
+        .faq-question {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            color: var(--text-sub);
+            padding-left: 1.5rem;
+            display: none;
+            margin-top: 0.5rem;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-icon {
+            transition: transform 0.2s;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col h4 {
+            color: white;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #1e293b;
+            font-size: 0.875rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .nav-links {
+                display: none;
+            }
+            .strategy-item {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav-wrapper">
+        <a href="#" class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20"/><path d="M12 2v20"/><path d="m4.93 4.93 14.14 14.14"/><path d="m19.07 4.93-14.14 14.14"/></svg>
+            套路<span>璐</span>
+        </a>
+        <nav class="nav-links">
+            <a href="#strategy">核心策略</a>
+            <a href="#cases">实战案例</a>
+            <a href="#guide">避坑指南</a>
+            <a href="#faq">常见问题</a>
+        </nav>
+        <a href="#subscribe" class="btn-subscribe">订阅更新</a>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-tags">
+                <span class="tag">职场博弈</span>
+                <span class="tag">人际沟通</span>
+                <span class="tag">心理洞察</span>
+                <span class="tag">思维升级</span>
+            </div>
+            <h1>识破隐形规则<br>掌握<span class="highlight">主动权</span></h1>
+            <p>深入解析职场、社交与情感中的心理博弈与策略。不是教你圆滑，而是助你保持清醒，在复杂环境中做出最优决策。</p>
+            <div style="display: flex; gap: 1rem; justify-content: center;">
+                <a href="#cases" class="btn-subscribe" style="background-color: var(--primary-color);">开始学习</a>
+                <a href="#guide" style="padding: 0.5rem 1.25rem; border: 1px solid var(--border-color); border-radius: 6px; font-weight: 500;">查看避坑指南</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Strategies Section -->
+    <section id="strategy" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>核心思维模型</h2>
+                <p>构建底层认知，看透表象背后的逻辑</p>
+            </div>
+            <div class="strategy-list">
+                <article class="strategy-item">
+                    <div class="strategy-icon">🧠</div>
+                    <div class="strategy-content">
+                        <h3>灰度认知：打破非黑即白的思维定式</h3>
+                        <p>在处理复杂冲突时，避免情绪化的站队。学会在“对立”中寻找“共存”的可能，通过灰度认知降低决策风险，达成多方共赢。</p>
+                    </div>
+                </article>
+                <article class="strategy-item">
+                    <div class="strategy-icon">🛡️</div>
+                    <div class="strategy-content">
+                        <h3>防御性悲观：为最坏情况做好准备</h3>
+                        <p>在行动前预设障碍与失败，从而在心理上建立缓冲带。这种策略能让你在危机来临时保持冷静，迅速启动应急预案。</p>
+                    </div>
+                </article>
+                <article class="strategy-item">
+                    <div class="strategy-icon">⚡</div>
+                    <div class="strategy-content">
+                        <h3>沉没成本陷阱：及时止损的勇气</h3>
+                        <p>很多人在错误的决定上越陷越深，只因不甘心之前的投入。学会识别沉没成本，理性评估未来收益，果断切断无效投入。</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practical Cases Section -->
+    <section id="cases" class="section" style="background-color: white;">
+        <div class="container">
+            <div class="section-header">
+                <h2>实战场景解析</h2>
+                <p>从具体场景出发，拆解高情商应对方式</p>
+            </div>
+            <div class="grid-3">
+                <article class="card">
+                    <div class="card-image">
+                        <span class="card-category">职场</span>
+                        <img src="https://picsum.photos/seed/work1/600/400" alt="职场会议场景">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">会议中的“向上管理”话术</h3>
+                        <p class="card-excerpt">如何汇报工作既能体现专业度，又能让领导觉得省心？掌握“结论先行”与“方案前置”的沟通技巧。</p>
+                        <div class="card-footer">
+                            <span>阅读时间 5分钟</span>
+                            <a href="#">阅读全文 &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">
+                        <span class="card-category">社交</span>
+                        <img src="https://picsum.photos/seed/social1/600/400" alt="社交聚会场景">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">饭局上的“捧杀”与“反捧杀”</h3>
+                        <p class="card-excerpt">面对过度吹捧的社交场合，既不驳面子也不迷失自我。学会用幽默化解尴尬，将压力转化为互动的契机。</p>
+                        <div class="card-footer">
+                            <span>阅读时间 4分钟</span>
+                            <a href="#">阅读全文 &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-image">
+                        <span class="card-category">情感</span>
+                        <img src="https://picsum.photos/seed/love1/600/400" alt="情感咨询场景">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">识别“间歇性强化”的情感操控</h3>
+                        <p class="card-excerpt">为什么忽冷忽热的关系最让人上瘾？解析心理学中的间歇性强化效应，教你识别并跳出情感操控的怪圈。</p>
+                        <div class="card-footer">
+                            <span>阅读时间 6分钟</span>
+                            <a href="#">阅读全文 &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guide Section -->
+    <section id="guide" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>避坑指南</h2>
+                <p>高频雷区盘点，让你的每一步都更稳健</p>
+            </div>
+            <div class="grid-3">
+                <div class="card" style="text-align: center; padding: 2rem 1.5rem;">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">🚫</div>
+                    <h3 style="margin-bottom: 0.5rem;">过度解释</h3>
+                    <p style="color: var(--text-sub);">当别人已经产生误解时，越解释越显得心虚。直接承认并给出解决方案，比辩解更有力量。</p>
+                </div>
+                <div class="card" style="text-align: center; padding: 2rem 1.5rem;">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">🤥</div>
+                    <h3 style="margin-bottom: 0.5rem;">情绪化回应</h3>
+                    <p style="color: var(--text-sub);">在利益冲突中，先处理情绪再处理事情。保持冷静是最高级的威慑力，也是最大的破局点。</p>
+                </div>
+                <div class="card" style="text-align: center; padding: 2rem 1.5rem;">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">📉</div>
+                    <h3 style="margin-bottom: 0.5rem;">透支信用</h3>
+                    <p style="color: var(--text-sub);">无论是个人信誉还是团队资源，透支只会导致信任崩塌。建立长期主义思维，积累无形资产。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq-section">
+        <div class="container" style="max-width: 800px;">
+            <div class="section-header">
+                <h2>常见问题</h2>
+                <p>关于思维策略与人际博弈的深度解答</p>
+            </div>
+            
+            <div class="faq-item active" onclick="toggleFaq(this)">
+                <div class="faq-question">
+                    <span>使用“套路”会不会显得不真诚？</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>真诚是做人的底色，而“套路”是做事的工具。真诚不等于毫无防备，也不等于直来直去。真正的策略家懂得在保护自己的前提下，用对方能接受的方式达成目标，这是一种对他人的尊重，而非欺骗。</p>
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <div class="faq-question">
+                    <span>如何判断对方是否在对我使用套路？</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>观察对方是否过度索取或过度付出（间歇性强化），是否只谈利益不谈原则，或者在冲突中是否总是能精准地踩中你的雷区。当你感到被操控或情绪波动异常剧烈时，就需要警惕了。</p>
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <div class="faq-question">
+                    <span>适合新手入门的心理学书籍有哪些？</span>
+                    <span class="faq-icon">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>推荐《影响力》、《思考，快与慢》、《乌合之众》以及《非暴力沟通》。这些书籍能帮助你建立对人类行为的底层理解，是构建“套路璐”思维体系的重要基石。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="subscribe" class="section" style="background-color: var(--primary-color); color: white; text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 2rem; margin-bottom: 1rem;">升级你的思维维度</h2>
+            <p style="margin-bottom: 2rem; opacity: 0.9;">每周获取最新的策略解析与避坑指南，不再做被动的一方。</p>
+            <form onsubmit="event.preventDefault(); alert('感谢订阅！这里将显示订阅成功提示。');" style="max-width: 500px; margin: 0 auto; display: flex; gap: 0.5rem;">
+                <input type="email" placeholder="请输入您的邮箱地址" required style="flex-grow: 1; padding: 0.75rem; border-radius: 6px; border: none; outline: none;">
+                <button type="submit" style="padding: 0.75rem 1.5rem; background-color: var(--accent-color); color: white; border: none; border-radius: 6px; font-weight: 700; cursor: pointer;">立即订阅</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <a href="#" class="logo" style="color: white; margin-bottom: 1rem; display: inline-block;">
+                    套路璐
+                </a>
+                <p style="font-size: 0.9rem; line-height: 1.6;">
+                    专注于高阶思维模型与实用社交策略的分享平台。助你在复杂的世界中，保持清醒，从容应对。
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>内容栏目</h4>
+                <ul>
+                    <li><a href="#">核心策略</a></li>
+                    <li><a href="#">实战案例</a></li>
+                    <li><a href="#">避坑指南</a></li>
+                    <li><a href="#">深度访谈</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>关于我们</h4>
+                <ul>
+                    <li><a href="#">平台介绍</a></li>
+                    <li><a href="#">作者团队</a></li>
+                    <li><a href="#">合作联系</a></li>
+                    <li><a href="#">免责声明</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>关注我们</h4>
+                <ul>
+                    <li><a href="#">微信公众号</a></li>
+                    <li><a href="#">知乎专栏</a></li>
+                    <li><a href="#">小红书</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 套路璐策略指南网. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function toggleFaq(element) {
+        // Close all other items
+        const allItems = document.querySelectorAll('.faq-item');
+        allItems.forEach(item => {
+            if (item !== element) {
+                item.classList.remove('active');
+            }
+        });
+        // Toggle current item
+        element.classList.toggle('active');
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+
+</body>
+              </html>
