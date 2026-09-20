@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="家庭性史记录指南：了解家庭性史对生殖健康、遗传咨询及心理治疗的重要性。提供专业的记录方法、隐私保护建议及常见问题解答。">
+    <meta name="keywords" content="家庭性史, 性史, 遗传咨询, 生殖健康, 家庭病史, 心理咨询, 隐私保护">
+    <title>家庭性史-生殖健康与遗传咨询的重要记录指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c5282;
+            --secondary-color: #3182ce;
+            --accent-color: #ed8936;
+            --bg-color: #f7fafc;
+            --text-color: #2d3748;
+            --text-light: #718096;
+            --white: #ffffff;
+            --border-color: #e2e8f0;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--secondary-color);
+        }
+
+        .container {
+            width: 100%;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .btn:hover {
+            background-color: #dd6b20;
+            transform: translateY(-2px);
+        }
+
+        /* Main Content Grid */
+        main {
+            padding: 3rem 0;
+        }
+
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .grid-layout {
+                grid-template-columns: 1fr;
+            }
+            .nav-container {
+                flex-direction: column;
+                height: auto;
+                padding: 1rem 0;
+            }
+            nav ul {
+                margin-top: 1rem;
+                gap: 1rem;
+            }
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-color);
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Article Card */
+        .article-card {
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            overflow: hidden;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .article-content {
+            padding: 2rem;
+        }
+
+        .article-meta {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .article-content h2 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .article-content p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .highlight-box {
+            background-color: #ebf8ff;
+            border-left: 4px solid var(--secondary-color);
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        /* Checklist Table */
+        .checklist-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .checklist-table th, .checklist-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .checklist-table th {
+            background-color: #f8fafc;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        /* Sidebar */
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .sidebar-widget {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+        }
+
+        .sidebar-widget h3 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .sidebar-list {
+            list-style: none;
+        }
+
+        .sidebar-list li {
+            margin-bottom: 0.75rem;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .sidebar-list li:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-list a {
+            color: var(--text-color);
+            font-size: 0.95rem;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 1rem;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            background-color: #f8fafc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question:hover {
+            background-color: #edf2f7;
+        }
+
+        .faq-answer {
+            padding: 0 1rem 1rem;
+            color: var(--text-light);
+            display: none;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1rem;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question {
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a202c;
+            color: #cbd5e0;
+            padding: 3rem 0;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .footer-section h4 {
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .footer-section p, .footer-section a {
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #2d3748;
+            font-size: 0.8rem;
+        }
+
+        /* Utility */
+        .icon {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            stroke-width: 0;
+            stroke: currentColor;
+            fill: currentColor;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z"/></svg>
+                家庭性史
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#why">为什么要记录</a></li>
+                    <li><a href="#guide">记录指南</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                    <li><a href="#resources">隐私与资源</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>家庭性史：生殖健康与遗传咨询的重要记录</h1>
+            <p>家庭性史是医疗评估中的关键组成部分，它帮助医生了解家族中潜在的遗传风险、性传播疾病史及生殖健康问题，从而制定更精准的诊疗方案。</p>
+            <a href="#guide" class="btn">开始记录</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="grid-layout">
+            <!-- Left Content -->
+            <div class="content-area">
+                
+                <!-- Intro Section -->
+                <article class="article-card">
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span>健康指南</span>
+                            <span>•</span>
+                            <span>5分钟阅读</span>
+                        </div>
+                        <h2>什么是家庭性史？</h2>
+                        <p>家庭性史（Family Sexual History）是医患沟通中关于患者及其直系亲属（父母、兄弟姐妹、子女）的性发育、性功能、性传播疾病史以及生殖健康状况的详细记录。它不仅仅包含性传播疾病的筛查，还包括生殖器发育异常、性取向、性心理发展以及相关的家族遗传背景。</p>
+                        <p>在现代医学中，家庭性史被视为病史采集（Anamnesis）中的核心板块之一。它对于评估患者的生殖潜能、预测遗传疾病风险以及筛查性传播感染具有重要意义。</p>
+                    </div>
+                </article>
+
+                <!-- Importance Section -->
+                <section id="why">
+                    <h3 class="section-title">
+                        <svg class="icon" viewBox="0 0 24 24" style="width:1.5rem;height:1.5rem;"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                        为什么要重视家庭性史？
+                    </h3>
+                    <div class="article-card">
+                        <div class="article-content">
+                            <p>记录家庭性史能够帮助医生发现隐匿的遗传模式。例如，某些性染色体异常（如克氏综合征或特纳综合征）在家族中可能表现为反复流产、不孕不育或生育特征明显的后代。</p>
+                            <div class="highlight-box">
+                                <strong>核心价值：</strong> 帮助识别潜在的遗传风险、优化生育规划、预防性传播疾病的代际传播。
+                            </div>
+                            <h2>记录家庭性史的必要性</h2>
+                            <p>1. <strong>生殖健康评估：</strong> 了解家族是否有不孕不育史，有助于医生在诊疗时进行针对性的激素检查或生育力评估。</p>
+                            <p>2. <strong>遗传病筛查：</strong> 许多遗传性性功能障碍或发育异常具有家族聚集性。了解这些信息有助于进行基因咨询。</p>
+                            <p>3. <strong>心理支持：</strong> 了解家族成员的性心理发展过程，有助于心理医生识别患者是否面临类似的心理挑战，提供更有针对性的心理疏导。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Guide Section -->
+                <section id="guide">
+                    <h3 class="section-title">
+                        <svg class="icon" viewBox="0 0 24 24" style="width:1.5rem;height:1.5rem;"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                        家庭性史记录指南
+                    </h3>
+                    <div class="article-card">
+                        <div class="article-content">
+                            <p>建议您在就医前，提前整理好以下信息。这不仅有助于医生快速了解情况，也能保护您的隐私，避免在诊室中尴尬地回忆细节。</p>
+                            <table class="checklist-table">
+                                <thead>
+                                    <tr>
+                                        <th>记录类别</th>
+                                        <th>具体问题</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>直系亲属</strong></td>
+                                        <td>父母、兄弟姐妹、子女的生殖健康状况（如：是否有不孕不育、流产史、死胎史）。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>性传播疾病</strong></td>
+                                        <td>家族成员是否有梅毒、淋病、尖锐湿疣、HIV等感染史及治疗情况。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>性发育与功能</strong></td>
+                                        <td>家族成员是否有阴茎发育异常（小阴茎、隐睾）、勃起功能障碍（ED）、早泄等病史。</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>遗传背景</strong></td>
+                                        <td>家族中是否有染色体异常、多囊卵巢综合征（PCOS）、雄激素不敏感综合征等。</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Sidebar -->
+            <aside>
+                <div class="sidebar-widget">
+                    <h3>常见相关疾病</h3>
+                    <ul class="sidebar-list">
+                        <li><a href="#">多囊卵巢综合征 (PCOS)</a></li>
+                        <li><a href="#">克氏综合征</a></li>
+                        <li><a href="#">特纳综合征</a></li>
+                        <li><a href="#">性染色体微缺失</a></li>
+                        <li><a href="#">先天性肾上腺皮质增生症</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>隐私保护提示</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-light);">家庭性史涉及个人隐私。建议在私密环境（如家中）整理资料，或使用加密文档存储，仅在就医时提供给医生。</p>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>相关资源</h3>
+                    <ul class="sidebar-list">
+                        <li><a href="#">国家卫健委生殖健康指南</a></li>
+                        <li><a href="#">遗传咨询门诊介绍</a></li>
+                        <li><a href="#">性传播疾病预防手册</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <!-- FAQ Section -->
+        <section id="faq" style="margin-top: 3rem;">
+            <h3 class="section-title">常见问题解答 (FAQ)</h3>
+            <div style="max-width: 800px;">
+                <div class="faq-item">
+                    <div class="faq-question">问：如果家族中没有人提及过性相关疾病，还需要记录吗？</div>
+                    <div class="faq-answer">答：需要。许多性传播疾病或性功能障碍可能被家族成员视为隐私而隐瞒，或者未被医生诊断。即使没有明确病史，记录“无相关病史”也是重要的信息。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">问：家庭性史对女性患者有什么特别意义？</div>
+                    <div class="faq-answer">答：对女性而言，家族性史对于评估月经不调、多囊卵巢、生殖器发育畸形以及乳腺癌/卵巢癌家族风险（如BRCA基因突变）尤为重要。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">问：记录这些信息会不会被泄露？</div>
+                    <div class="faq-answer">答：正规的医疗机构对患者的病史资料有严格的保密制度。您的家庭性史记录仅用于医疗诊断，不会对外公开。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">问：什么时候需要做遗传咨询？</div>
+                    <div class="faq-answer">答：当家族中有多名成员患有不明原因的不孕不育、反复流产、或有先天性发育异常时，建议进行专业的遗传咨询。</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section" style="flex: 2; min-width: 300px;">
+                    <h4>家庭性史指南</h4>
+                    <p>致力于提供科学、客观、隐私保护的家庭性健康信息，帮助您更好地了解自身健康状况，促进家庭和谐与生殖健康。</p>
+                </div>
+                <div class="footer-section" style="flex: 1;">
+                    <h4>快速导航</h4>
+                    <a href="#why">为什么要记录</a>
+                    <a href="#guide">记录方法</a>
+                    <a href="#faq">常见问题</a>
+                </div>
+                <div class="footer-section" style="flex: 1;">
+                    <h4>免责声明</h4>
+                    <p>本网站内容仅供参考，不能替代专业医生的诊断和治疗建议。如有身体不适，请及时前往正规医院就诊。</p>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 家庭性史健康指南. 保留所有权利.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 简单的FAQ折叠逻辑
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // 关闭其他打开的项（手风琴效果）
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // 切换当前项
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
