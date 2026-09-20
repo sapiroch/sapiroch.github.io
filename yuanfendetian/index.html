@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>缘份的天空 - 情感社区与心灵交流平台</title>
+    <meta name="description" content="缘份的天空是一个专注于情感交流、心灵疗愈与社区互动的平台。在这里分享故事、寻找共鸣、探讨关系与人生哲学，让每一份相遇都成为美好的回忆。">
+    <meta name="keywords" content="缘份的天空,情感社区,心灵交流,情感故事,恋爱指南,心灵疗愈">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #7b68ee;
+            --primary-light: #e6e6fa;
+            --secondary-color: #ff69b4;
+            --text-main: #333333;
+            --text-light: #666666;
+            --bg-body: #f9f9f9;
+            --bg-card: #ffffff;
+            --border-radius: 12px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-body);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 头部导航 */
+        header {
+            background-color: var(--bg-card);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-size: 16px;
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+        .btn-outline {
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            box-shadow: 0 4px 10px rgba(123, 104, 238, 0.3);
+        }
+
+        .btn-primary:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+
+        /* Hero 区域 */
+        .hero {
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(123, 104, 238, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+            border-radius: 50%;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255, 105, 180, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: var(--text-main);
+            letter-spacing: 1px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--text-light);
+            margin-bottom: 40px;
+        }
+
+        .search-box {
+            background: white;
+            padding: 10px;
+            border-radius: 30px;
+            display: inline-flex;
+            box-shadow: var(--shadow);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .search-box input {
+            flex: 1;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            outline: none;
+            border-radius: 30px;
+        }
+
+        .search-box button {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* 核心板块 */
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        .section-header p {
+            color: var(--text-light);
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border-radius: var(--border-radius);
+            padding: 25px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.02);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            background: var(--primary-light);
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: var(--text-light);
+            font-size: 14px;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .card-link {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .card-link:hover {
+            gap: 8px;
+        }
+
+        /* 故事展示区 */
+        .stories-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            align-items: center;
+        }
+
+        .story-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .story-content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .story-meta {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        .story-tags span {
+            background: #f0f0f0;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: var(--text-light);
+            margin-right: 5px;
+        }
+
+        .story-text {
+            color: var(--text-main);
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+
+        /* 互动话题区 */
+        .topics-section {
+            background-color: #fff;
+        }
+
+        .topic-item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            transition: background 0.2s;
+        }
+
+        .topic-item:hover {
+            background: #fafafa;
+        }
+
+        .topic-rank {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ddd;
+            width: 40px;
+            text-align: center;
+        }
+
+        .topic-item:nth-child(1) .topic-rank { color: #ff9800; }
+        .topic-item:nth-child(2) .topic-rank { color: #ff5722; }
+        .topic-item:nth-child(3) .topic-rank { color: #ff9800; }
+
+        .topic-content {
+            flex: 1;
+        }
+
+        .topic-title {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .topic-stats {
+            font-size: 12px;
+            color: var(--text-light);
+        }
+
+        .topic-action {
+            padding: 8px 16px;
+            background: var(--primary-light);
+            color: var(--primary-color);
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        /* 常见问题 */
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .faq-item {
+            background: white;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            border: 1px solid #eee;
+        }
+
+        .faq-item h4 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .faq-item p {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #2c2c2c;
+            color: #aaa;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand h3 {
+            color: white;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            font-size: 14px;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 900px) {
+            .grid-3 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .stories-grid {
+                grid-template-columns: 1fr;
+            }
+            .story-image {
+                height: 300px;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .nav-links {
+                display: none;
+            }
+            .grid-3 {
+                grid-template-columns: 1fr;
+            }
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">
+                <span>☁</span> 缘份的天空
+            </a>
+            <nav class="nav-links">
+                <a href="#">首页</a>
+                <a href="#">情感社区</a>
+                <a href="#">心灵疗愈</a>
+                <a href="#">关系指南</a>
+                <a href="#">寻找共鸣</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="btn btn-outline">登录</button>
+                <button class="btn btn-primary">加入我们</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>在这里，遇见属于你的那片天空</h1>
+                <p>无论你是正在经历情感迷茫，还是渴望寻找灵魂伴侣，缘份的天空都是你心灵的栖息地。分享故事，聆听心声，让每一次相遇都充满意义。</p>
+                <div class="search-box">
+                    <input type="text" placeholder="搜索话题、故事或寻找同类...">
+                    <button aria-label="搜索">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 核心板块 -->
+        <section class="section">
+            <div class="container">
+                <div class="grid-3">
+                    <article class="card">
+                        <div class="card-icon">💬</div>
+                        <h3>情感树洞</h3>
+                        <p>匿名倾诉你的烦恼与心事，在这里没有人认识你，只有温暖的倾听者和真诚的建议。</p>
+                        <a href="#" class="card-link">进入树洞 &rarr;</a>
+                    </article>
+                    <article class="card">
+                        <div class="card-icon">✨</div>
+                        <h3>缘分匹配</h3>
+                        <p>基于心理特质与兴趣爱好的智能匹配，帮助你找到频率相同的灵魂伴侣。</p>
+                        <a href="#" class="card-link">开始匹配 &rarr;</a>
+                    </article>
+                    <article class="card">
+                        <div class="card-icon">📚</div>
+                        <h3>关系指南</h3>
+                        <p>专业的情感导师与心理学文章，涵盖恋爱、婚姻、家庭等全方位的关系维护技巧。</p>
+                        <a href="#" class="card-link">阅读指南 &rarr;</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 精选故事 -->
+        <section class="section" style="background-color: #fff;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>精选故事</h2>
+                    <p>每一个故事背后，都是一段真实的经历与感悟</p>
+                </div>
+                <div class="stories-grid">
+                    <img src="https://picsum.photos/seed/love1/600/400" alt="一对情侣在公园散步" class="story-image">
+                    <div class="story-content">
+                        <div class="story-meta">
+                            <span>作者：云淡风轻</span>
+                            <span>•</span>
+                            <span>发布于 2小时前</span>
+                        </div>
+                        <h2>那个教会我如何去爱的陌生人</h2>
+                        <div class="story-tags">
+                            <span>#治愈</span>
+                            <span>#成长</span>
+                            <span>#陌生人</span>
+                        </div>
+                        <p class="story-text">
+                            在这个快节奏的城市里，我们总是习惯了独来独往。直到那天在地铁上，我看到了那个陌生人。他没有说话，只是默默地把座位让给了我，并递给我一张纸巾，指了指我眼角的泪水。那一刻，我意识到，善意其实无处不在，只是我们往往因为忙碌而忽略了身边的美好。这篇文章记录了我如何从封闭内心到重新敞开怀抱的过程，希望能给同样在迷途中的人一点光亮。
+                        </p>
+                        <a href="#" class="btn btn-outline">阅读全文</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 热门话题 -->
+        <section class="section topics-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>热门话题讨论</h2>
+                    <p>加入讨论，分享你的观点，寻找志同道合的朋友</p>
+                </div>
+                <div class="topic-list">
+                    <div class="topic-item">
+                        <div class="topic-rank">1</div>
+                        <div class="topic-content">
+                            <h4 class="topic-title">异地恋如何维持长久的激情？</h4>
+                            <div class="topic-stats">1.2万参与 • 342条回复</div>
+                        </div>
+                        <div class="topic-action">参与讨论</div>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-rank">2</div>
+                        <div class="topic-content">
+                            <h4 class="topic-title">关于“断崖式分手”的心理学分析</h4>
+                            <div class="topic-stats">8,500参与 • 210条回复</div>
+                        </div>
+                        <div class="topic-action">参与讨论</div>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-rank">3</div>
+                        <div class="topic-content">
+                            <h4 class="topic-title">30岁单身，我是该将就还是坚持？</h4>
+                            <div class="topic-stats">6,200参与 • 560条回复</div>
+                        </div>
+                        <div class="topic-action">参与讨论</div>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-rank">4</div>
+                        <div class="topic-content">
+                            <h4 class="topic-title">原生家庭对亲密关系的影响</h4>
+                            <div class="topic-stats">5,100参与 • 180条回复</div>
+                        </div>
+                        <div class="topic-action">参与讨论</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>常见问题</h2>
+                    <p>关于缘份的天空平台的一些解答</p>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4>如何在平台上发布故事？</h4>
+                        <p>注册登录后，点击右上角的“发布”按钮，选择“发布故事”，填写标题、分类和内容即可。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>我的隐私会被泄露吗？</h4>
+                        <p>我们非常重视用户隐私，所有发布的内容默认为匿名，除非您主动开启实名认证。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>缘分匹配算法的原理是什么？</h4>
+                        <p>我们结合了心理学测评数据与用户的兴趣标签，通过多维度的算法模型进行综合打分匹配。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>如何联系客服？</h4>
+                        <p>您可以在页脚找到我们的联系方式，或者通过“帮助中心”提交工单。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>缘份的天空</h3>
+                    <p style="font-size: 14px; line-height: 1.8;">
+                        致力于打造最温暖、最真诚的线上情感社区。在这里，我们相信每一份相遇都是久别重逢。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="#">平台介绍</a></li>
+                        <li><a href="#">团队故事</a></li>
+                        <li><a href="#">加入我们</a></li>
+                        <li><a href="#">联系方式</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>帮助中心</h4>
+                    <ul>
+                        <li><a href="#">使用指南</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">用户协议</a></li>
+                        <li><a href="#">意见反馈</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关注我们</h4>
+                    <ul>
+                        <li><a href="#">微信公众号</a></li>
+                        <li><a href="#">新浪微博</a></li>
+                        <li><a href="#">小红书</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 缘份的天空 版权所有. 本站内容仅供交流参考，不构成专业建议。</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
